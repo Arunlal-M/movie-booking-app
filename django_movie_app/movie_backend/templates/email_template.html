@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        <p>Dear {{ booking.customer_name }},</p>
+        <p>Your booking for <span class="highlight">{{ movie.title }}</span> on <span class="highlight">{{ booking.show_date }}</span> at <span class="highlight">{{ booking.booking_time }}</span> has been confirmed.</p>
+        <p>Booking ID: <span class="highlight">{{ booking.id }}</span></p>
+        <p>Seats Booked: <span class="highlight">{{ booking.seats_booked }}</span></p>
+        <p>Thank you for choosing AnimiX. Enjoy the show!</p>
+        <div class="footer">
+            <p>This is an automated email. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+</html>
+

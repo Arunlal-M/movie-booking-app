@@ -1,0 +1,7 @@
+.container-login {
+    background: linear-gradient(to left,#05216d 0.2%, #181818 80%);
+    border-radius: 10px;
+    padding: 50px;
+    width: 50%;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.4);
+  }
