@@ -34,11 +34,11 @@ function EditMovie() {
     }),
     menu: (provided) => ({
       ...provided,
-      backgroundColor: "#252525"
+      backgroundColor: "#454545"
     }),
     multiValue: (provided) => ({
       ...provided,
-      backgroundColor: "#252525"
+      backgroundColor: "#555555"
     }),
     multiValueLabel: (provided) => ({
       ...provided,
@@ -46,7 +46,7 @@ function EditMovie() {
     }),
     multiValueRemove: (provided) => ({
       ...provided,
-      color: "white"
+      color: "red"
     })
   };
 
